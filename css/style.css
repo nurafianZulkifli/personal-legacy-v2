@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #442D36;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -41,7 +41,7 @@ a:hover {
 
 .color-a {
   text-decoration: none;
-  color: #0078ff;
+  color: #AB7187;
 }
 
 .color-d {
@@ -72,6 +72,11 @@ a:hover {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.00rem;
+  font-weight: 300;
 }
 
 
@@ -690,10 +695,9 @@ background-color: #20201d;
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #2a2935;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -709,11 +713,11 @@ background-color: #20201d;
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #4e4e4e;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #0078ff;
+  color: #AB7187;
 }
 
 .navbar-mobile .getstarted {
