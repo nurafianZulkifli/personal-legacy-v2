@@ -1,4 +1,10 @@
-(function() {
+/** 
+ * Caught you snopping!
+ * I'm not good in JS, so references were used to create the animations and 
+ * transitions seen on the site.
+ * */
+
+(function () {
   "use strict";
 
   /**
@@ -13,9 +19,6 @@
     }
   }
 
-  /**
-   * Easy event listener function
-   */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -33,6 +36,7 @@
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
+
 
   /**
    * Navbar links active state on scroll
@@ -54,6 +58,7 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
+
   /**
    * Scrolls to an element with header offset
    */
@@ -72,6 +77,7 @@
     })
   }
 
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
@@ -88,45 +94,32 @@
     onscroll(document, headerScrolled)
   }
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
 
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
 
+
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
 
+
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -141,6 +134,7 @@
     }
   }, true)
 
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -151,6 +145,7 @@
       }
     }
   });
+
 
   /**
    * Intro type effect
@@ -167,12 +162,14 @@
     });
   }
 
+
   /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
+
 
   /**
    * Portfolio details slider
@@ -190,6 +187,24 @@
       clickable: true
     }
   });
+
+
+  /**
+   * Back to top button
+   */
+  let backtotop = select('.back-to-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
+
 
   /**
    * Preloader
