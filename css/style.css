@@ -94,7 +94,8 @@ a:hover {
 .bxs-chevron-right-circle {
   color: #936174;
   margin-top: 1.5rem!important;
-  font-size: 30px;
+  font-size: 35px;
+  float: right;
 }
 
 .p {
