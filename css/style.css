@@ -1,8 +1,6 @@
 /**
-* Template Name: DevFolio - v4.1.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* CSS Consolidation for the Website
+* Everything including the styles for the individual portfolio can be found here.
 */
 
 /*--------------------------------------------------------------
@@ -14,29 +12,8 @@ body {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: #ffffff;
-}
-
-a {
-  color: #1e1e1e;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover {
-  color: #442D36;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.p-r {
-  position: relative;
 }
 
 .color-a {
@@ -776,6 +753,7 @@ background-color: #20201d;
   height: 100vh;
   background: url("../img/hero-bg.png") top right no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
