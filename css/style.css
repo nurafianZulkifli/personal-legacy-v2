@@ -638,6 +638,11 @@ background-color: #20201d;
   font-weight: 600;
 }
 
+.typed-cursor.typed-cursor--blink {
+  margin-left: 10px;
+}
+
+
 @media (min-width: 768px) {
   .hero .hero-subtitle {
     font-size: 2.5rem;
