@@ -294,8 +294,6 @@ background-color: #20201d;
   padding: .3rem .6rem;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   font-size: 1rem;
   border-radius: .3rem;
@@ -720,6 +718,7 @@ background-color: #20201d;
   font-size: 20px;
   font-weight: bold;
   color: #b37f92;
+  margin-left: 5px;
 }
 
 .skill-mf .progress {
@@ -740,7 +739,6 @@ background-color: #20201d;
 --------------------------------------------------------------*/
 .portfolio-box {
   margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #161616;
   border-radius: 15px;
@@ -989,19 +987,9 @@ footer .credits a {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
 
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes animate-preloader {
   0% {
@@ -1012,14 +1000,6 @@ footer .credits a {
   }
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes animate-loading {
   0% {
