@@ -119,14 +119,14 @@ a:hover {
 .bg-image-connect {
     background: url("../img/overlay-bg.jpg") no-repeat;
     background-repeat: no-repeat;
-/*     background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
-    background-position: top right;
+    background-position: center center;
 }
 
 @media (max-width: 1024px) {
   .bg-image {
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
 
