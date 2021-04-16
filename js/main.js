@@ -1,8 +1,7 @@
 /** 
  * Caught you snopping!
- * I'm not good in JS, so references were used to create the animations and 
- * transitions seen on the site.
- * */
+ * I'm not good in JS, so references were used to create the animations and transitions seen on the site.
+ **/
 
 (function () {
   "use strict";

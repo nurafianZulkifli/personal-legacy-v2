@@ -1,7 +1,9 @@
-/**
-* CSS Consolidation for the Website
-* Everything including the styles for the individual portfolio can be found here.
-*/
+/** 
+ * Caught you snopping!
+ * I'm not good in JS, so references were used to create the animations and transitions seen on the site.
+ * CSS Consolidation for the Website
+ * Everything including the styles for the individual portfolio can be found here.
+**/
 
 /*--------------------------------------------------------------
 # General
@@ -81,29 +83,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.avatar {
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
-  overflow: hidden;
-}
-
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
-
-.bg-image-connect {
-    background: url("../img/overlay-bg.jpg") no-repeat;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-}
-
 @media (max-width: 1024px) {
   .bg-image {
     background-attachment: fixed;
@@ -150,7 +129,7 @@ h1,h2,h3,h4,h5,h6 {
   vertical-align: middle;
 }
 
-/*--/ Sections /--*/
+/* Sections */
 .sect-4 {
   padding: 0rem;
 }
@@ -201,7 +180,7 @@ background-color: #20201d;
   margin: 0 auto;
 }
 
-/*--/ Title Left /--*/
+/* Title Left */
 .title-box-2 {
   margin-bottom: 3rem;
 }
@@ -220,7 +199,7 @@ background-color: #20201d;
   bottom: -12px;
 }
 
-/*------/ Box /------*/
+/* Box */
 .box-pl2 {
   padding-left: 2rem;
 }
@@ -253,7 +232,7 @@ background-color: #20201d;
 }
 
 
-/*--/ Scrolltop s /--*/
+/* Scrolltop */
 .scrolltop-mf {
   position: relative;
   display: none;
@@ -311,9 +290,6 @@ background-color: #20201d;
   opacity: 1;
 }
 
-
-
-/*------/ Button /------*/
 .button {
   display: inline-block;
   padding: .3rem .6rem;
@@ -362,6 +338,7 @@ background-color: #20201d;
   border-radius: .3rem;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -380,12 +357,11 @@ background-color: #20201d;
   padding: 12px 0;
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
 .navbar {
   padding: 0;
 }
@@ -503,6 +479,7 @@ background-color: #20201d;
   visibility: visible;
 }
 
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -512,9 +489,8 @@ background-color: #20201d;
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
@@ -523,6 +499,7 @@ background-color: #20201d;
   line-height: 0;
   transition: 0.5s;
 }
+
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
@@ -617,6 +594,7 @@ background-color: #20201d;
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -686,6 +664,7 @@ background-color: #20201d;
   font-size: 3rem;
 }
 
+
 @media (min-width: 768px) {
   .hero-single .hero-title {
     font-size: 3.5rem;
@@ -730,6 +709,7 @@ background-color: #20201d;
   margin-left: 10px;
 }
 
+
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
     margin-top: 3rem;
@@ -753,52 +733,6 @@ background-color: #20201d;
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #936174;
-}
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-box .ico-circle i {
-  line-height: 0;
-  font-size: 40px;
-}
-
-.service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: .4rem 0;
-}
-
-.service-box .s-description {
-  color: #4e4e4e;
 }
 
 
@@ -911,80 +845,18 @@ background-color: #20201d;
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .testimonial-box .description {
-    padding: 0 5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .testimonial-box .description {
-    padding: 0 8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonial-box .description {
-    padding: 0 13rem;
-  }
-}
-
-.swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
-}
 
 /*--------------------------------------------------------------
-# connect
+# Connect
 --------------------------------------------------------------*/
+.bg-image-connect {
+  background: url("../img/overlay-bg.jpg") no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
@@ -993,13 +865,13 @@ background-color: #20201d;
   margin-top: 4rem;
 }
 
+
 @media (min-width: 767px) {
   .connect-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
   }
 }
-
 
 
 /*--------------------------------------------------------------
@@ -1069,7 +941,6 @@ background-color: #20201d;
 }
 
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1122,6 +993,7 @@ footer .credits a {
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
+
 
 @-webkit-keyframes animate-preloader {
   0% {
