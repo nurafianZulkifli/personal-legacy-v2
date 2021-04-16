@@ -77,6 +77,7 @@ a:hover {
 .lead {
   font-size: 1.00rem;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 
@@ -851,11 +852,12 @@ background-color: #20201d;
 # About
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 4rem;
 }
 
 .about-mf .about-img {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
