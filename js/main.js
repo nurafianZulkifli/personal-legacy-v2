@@ -1,5 +1,5 @@
 /** 
- * Caught you snopping!
+ * Caught you snooping!
  * I'm not good in JS, so references were used to create the animations and transitions seen on the site.
  **/
 
