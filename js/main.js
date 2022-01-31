@@ -1,6 +1,6 @@
 /** 
  * Caught you snooping!
- * I'm not good in JS, so references were used to create the animations and transitions seen on the site.
+ * I'm not that good in JS yet, so references were used to create the animations and transitions seen on the site.
  **/
 
 (function () {
